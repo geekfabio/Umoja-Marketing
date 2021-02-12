@@ -88,9 +88,14 @@
   <ItemGroup>
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\TestUnit.cs" />
-    <Compile Include="Models\CategoryModel.cs" />
-    <Compile Include="Repository\CustomerRepository.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Models\CategoryModel.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\CustomerRepository.cs" />
     <Compile Include="Core\Database.cs" />
     <Compile Include="Core\DropShadow.cs" />
     <Compile Include="frmLogin.cs">
@@ -104,12 +109,6 @@
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Logger.cs" />
     <Compile Include="Models\CampanhaModel.cs" />
@@ -143,19 +142,11 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Views\frmClientes.resx">
       <DependentUpon>frmClientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,7 +156,6 @@
     <EmbeddedResource Include="Views\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -184,12 +174,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Mobile Marketing%281%29.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Videos\Diteck Sky\Vissoka Framework\Vissoka.csproj">
-      <Project>{9A7A390D-B460-45CE-A889-272A92554E2D}</Project>
-      <Name>Vissoka</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Email campaign.gif" />
@@ -216,12 +200,20 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\140769905_456449825366531_4429681729673535934_n.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="favicon.ico" />
     <None Include="Resources\24btn_export.png" />
     <None Include="Resources\btn24x24.png" />
+    <None Include="Resources - Cópia\24btn_export.png" />
+    <None Include="Resources - Cópia\btn24x24.png" />
+    <None Include="Resources - Cópia\Email campaign.gif" />
+    <None Include="Resources - Cópia\Entypo_2302%2812%29_24.png" />
+    <None Include="Resources - Cópia\Entypo_2302%2812%29_48.png" />
+    <None Include="Resources - Cópia\menu_campanhas.png" />
+    <None Include="Resources - Cópia\menu_Clientes.png" />
+    <None Include="Resources - Cópia\menu_config.png" />
+    <None Include="Resources - Cópia\menu_templates.png" />
+    <None Include="Resources - Cópia\Mobile Marketing%281%29.gif" />
+    <None Include="Resources - Cópia\Mobile Marketing.gif" />
     <Content Include="TO DO LIST.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>TO DO LIST.txt</LastGenOutput>
@@ -243,6 +235,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Vissoka Framework\Vissoka.csproj">
+      <Project>{9a7a390d-b460-45ce-a889-272a92554e2d}</Project>
+      <Name>Vissoka</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

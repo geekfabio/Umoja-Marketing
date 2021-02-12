@@ -63,19 +63,9 @@ namespace Vissoka_Marketing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _140769905_456449825366531_4429681729673535934_n {
-            get {
-                object obj = ResourceManager.GetObject("140769905_456449825366531_4429681729673535934_n", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _24btn_export {
             get {
-                object obj = ResourceManager.GetObject("24btn_export", resourceCulture);
+                object obj = ResourceManager.GetObject("_24btn_export", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -95,7 +85,27 @@ namespace Vissoka_Marketing.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Email_campaign {
             get {
-                object obj = ResourceManager.GetObject("Email campaign", resourceCulture);
+                object obj = ResourceManager.GetObject("Email_campaign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Entypo_2302_12__24 {
+            get {
+                object obj = ResourceManager.GetObject("Entypo_2302_12__24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Entypo_2302_12__48 {
+            get {
+                object obj = ResourceManager.GetObject("Entypo_2302_12__48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,16 +143,6 @@ namespace Vissoka_Marketing.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap menu_dashboard {
-            get {
-                object obj = ResourceManager.GetObject("menu_dashboard", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap menu_templates {
             get {
                 object obj = ResourceManager.GetObject("menu_templates", resourceCulture);
@@ -155,7 +155,7 @@ namespace Vissoka_Marketing.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Mobile_Marketing {
             get {
-                object obj = ResourceManager.GetObject("Mobile Marketing", resourceCulture);
+                object obj = ResourceManager.GetObject("Mobile_Marketing", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -165,7 +165,7 @@ namespace Vissoka_Marketing.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Mobile_Marketing_1_ {
             get {
-                object obj = ResourceManager.GetObject("Mobile Marketing(1)", resourceCulture);
+                object obj = ResourceManager.GetObject("Mobile_Marketing_1_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

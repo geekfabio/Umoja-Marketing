@@ -167,7 +167,6 @@
             // 
             // viFlatPictureBox1
             // 
-            this.viFlatPictureBox1.Image = global::Vissoka_Marketing.Properties.Resources._140769905_456449825366531_4429681729673535934_n;
             this.viFlatPictureBox1.Location = new System.Drawing.Point(47, 2);
             this.viFlatPictureBox1.Name = "viFlatPictureBox1";
             this.viFlatPictureBox1.Size = new System.Drawing.Size(40, 35);
@@ -194,7 +193,6 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = global::Vissoka_Marketing.Properties.Resources.menu_config;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button5.Location = new System.Drawing.Point(0, 447);
             this.button5.Name = "button5";
@@ -210,7 +208,6 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::Vissoka_Marketing.Properties.Resources.menu_templates;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button4.Location = new System.Drawing.Point(0, 351);
             this.button4.Name = "button4";
@@ -238,7 +235,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::Vissoka_Marketing.Properties.Resources.menu_campanhas;
+         
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button3.Location = new System.Drawing.Point(0, 255);
             this.button3.Name = "button3";
@@ -255,7 +252,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::Vissoka_Marketing.Properties.Resources.menu_Clientes;
+         
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button2.Location = new System.Drawing.Point(0, 159);
             this.button2.Name = "button2";
@@ -273,7 +270,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::Vissoka_Marketing.Properties.Resources.menu_dashboard;
+         
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button1.Location = new System.Drawing.Point(0, 63);
             this.button1.Name = "button1";
