@@ -69,4 +69,9 @@ internal class UserModel
 		Company_ID = company_id;
 		Permissions_ID = permissoes_id;
 	}
+	public UserModel(int id)
+	{
+		ID = id;
+	}
+
 }

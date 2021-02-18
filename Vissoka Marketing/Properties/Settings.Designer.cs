@@ -25,7 +25,7 @@ namespace Vissoka_Marketing.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int userID {
             get {
                 return ((int)(this["userID"]));
@@ -37,7 +37,7 @@ namespace Vissoka_Marketing.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("User Root")]
         public string userName {
             get {
                 return ((string)(this["userName"]));
@@ -49,7 +49,7 @@ namespace Vissoka_Marketing.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Root")]
         public string userUsername {
             get {
                 return ((string)(this["userUsername"]));
@@ -61,7 +61,7 @@ namespace Vissoka_Marketing.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("929725366")]
         public string userContacts {
             get {
                 return ((string)(this["userContacts"]));
@@ -73,7 +73,7 @@ namespace Vissoka_Marketing.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int userState {
             get {
                 return ((int)(this["userState"]));
@@ -85,7 +85,7 @@ namespace Vissoka_Marketing.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int userPermissions_ID {
             get {
                 return ((int)(this["userPermissions_ID"]));
@@ -97,7 +97,7 @@ namespace Vissoka_Marketing.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
         public int userCompany_ID {
             get {
                 return ((int)(this["userCompany_ID"]));
@@ -109,6 +109,7 @@ namespace Vissoka_Marketing.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("02/17/2021 00:09:00")]
         public global::System.DateTime userDate {
             get {
                 return ((global::System.DateTime)(this["userDate"]));

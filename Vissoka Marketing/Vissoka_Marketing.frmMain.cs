@@ -1,34 +1,122 @@
-﻿namespace Vissoka_Marketing
+// Vissoka_Marketing.frmMainX
+using System;
+using System.ComponentModel;
+using System.Drawing;
+using System.Windows.Forms;
+using Vissoka.Controls;
+using Vissoka.Enums;
+using Vissoka.UI;
+using Vissoka_Marketing;
+using Vissoka_Marketing.Properties;
+using Vissoka_Marketing.Views;
+
+public class frmMainX : Form
 {
-    partial class frmMain
-    {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+	private IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing && (components != null))
-            {
-                components.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+	private Panel panel2;
 
-        #region Windows Form Designer generated code
+	private Panel panel1;
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
-        {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
+	private Label label1;
+
+	private Label labelWelcome;
+
+	private Label label2;
+
+	private Button button1;
+
+	private Panel panel3;
+
+	private ViFlatButton viFlatButton2;
+
+	private ViFlatButton viFlatButton1;
+
+	private Label labelSerial;
+
+	private VissokaCard vissokaCard1;
+
+	private VissokaCard vissokaCard2;
+
+	private VissokaCard vissokaCard3;
+
+	private VissokaCard vissokaCard4;
+
+	private VissokaCard vissokaCard5;
+
+	private VissokaCard vissokaCard6;
+
+	private Label label3;
+
+	private Label label4;
+
+	private Label label6;
+
+	private Label label7;
+
+	private Label label8;
+
+	private Label label9;
+
+	private Label labelTotal;
+
+	private Label label5;
+
+	private Label label10;
+
+	private Label label13;
+
+	private Label label11;
+
+	private Label label14;
+
+	private Label label12;
+
+	private ViFlatPictureBox viFlatPictureBox1;
+
+	private Label label15;
+
+	private Label label16;
+
+	private Panel panelUserControl;
+
+	public frmMainX()
+	{
+		InitializeComponent();
+	}
+
+	private void button3_Click(object sender, EventArgs e)
+	{
+	}
+
+	private void fmMain_Load(object sender, EventArgs e)
+	{
+		labelWelcome.Text = " Olá, {0} seja bem vindo" + Settings.Default.userName;
+	}
+
+	private void button2_Click(object sender, EventArgs e)
+	{
+		ControlCliente value = new ControlCliente();
+		panelUserControl.Controls.Add(value);
+		panelUserControl.Visible = true;
+	}
+
+	private void button1_Click(object sender, EventArgs e)
+	{
+		panelUserControl.Visible = false;
+	}
+
+	protected override void Dispose(bool disposing)
+	{
+		if (disposing && components != null)
+		{
+			components.Dispose();
+		}
+		base.Dispose(disposing);
+	}
+
+	private void InitializeComponent()
+	{
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.viFlatButton2 = new Vissoka.Controls.ViFlatButton();
@@ -36,14 +124,10 @@
             this.labelWelcome = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.viFlatPictureBox1 = new Vissoka.UI.ViFlatPictureBox();
             this.labelSerial = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.panelUserControl = new System.Windows.Forms.Panel();
             this.vissokaCard6 = new Vissoka.Controls.VissokaCard();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -65,17 +149,17 @@
             this.labelTotal = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.viFlatPictureBox1 = new Vissoka.UI.ViFlatPictureBox();
+            this.panelUserControl = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.viFlatPictureBox1)).BeginInit();
             this.vissokaCard6.SuspendLayout();
             this.vissokaCard5.SuspendLayout();
             this.vissokaCard4.SuspendLayout();
             this.vissokaCard3.SuspendLayout();
             this.vissokaCard2.SuspendLayout();
             this.vissokaCard1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.viFlatPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -87,7 +171,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(129, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(651, 58);
+            this.panel2.Size = new System.Drawing.Size(893, 58);
             this.panel2.TabIndex = 3;
             // 
             // panel3
@@ -95,22 +179,17 @@
             this.panel3.Controls.Add(this.viFlatButton2);
             this.panel3.Controls.Add(this.viFlatButton1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(366, 0);
+            this.panel3.Location = new System.Drawing.Point(608, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(285, 58);
             this.panel3.TabIndex = 2;
             // 
             // viFlatButton2
             // 
-            this.viFlatButton2.BackColor = System.Drawing.Color.White;
             this.viFlatButton2.BackColorClicked = System.Drawing.Color.Purple;
-            this.viFlatButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
             this.viFlatButton2.ButtonType = Vissoka.Enums.ButtonType.Default;
             this.viFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.viFlatButton2.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.viFlatButton2.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(41)))), ((int)(((byte)(187)))));
-            this.viFlatButton2.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
-            this.viFlatButton2.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
             this.viFlatButton2.Location = new System.Drawing.Point(122, 13);
             this.viFlatButton2.Name = "viFlatButton2";
             this.viFlatButton2.Opacity = 0;
@@ -121,15 +200,10 @@
             // 
             // viFlatButton1
             // 
-            this.viFlatButton1.BackColor = System.Drawing.Color.White;
             this.viFlatButton1.BackColorClicked = System.Drawing.Color.Purple;
-            this.viFlatButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(223)))), ((int)(((byte)(230)))));
             this.viFlatButton1.ButtonType = Vissoka.Enums.ButtonType.Default;
             this.viFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.viFlatButton1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.viFlatButton1.HoverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(41)))), ((int)(((byte)(187)))));
-            this.viFlatButton1.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(246)))), ((int)(((byte)(252)))));
-            this.viFlatButton1.HoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(144)))), ((int)(((byte)(147)))), ((int)(((byte)(153)))));
             this.viFlatButton1.Location = new System.Drawing.Point(14, 13);
             this.viFlatButton1.Name = "viFlatButton1";
             this.viFlatButton1.Opacity = 0;
@@ -161,10 +235,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(50)))), ((int)(((byte)(54)))));
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.viFlatPictureBox1);
             this.panel1.Controls.Add(this.labelSerial);
             this.panel1.Controls.Add(this.label1);
@@ -172,77 +242,24 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(129, 538);
+            this.panel1.Size = new System.Drawing.Size(129, 664);
             this.panel1.TabIndex = 2;
             // 
-            // button5
+            // viFlatPictureBox1
             // 
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button5.Location = new System.Drawing.Point(0, 441);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(129, 97);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "\r\nConfigurações";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button4.Location = new System.Drawing.Point(-3, 358);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(129, 97);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "\r\nTemplates";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button3.Location = new System.Drawing.Point(0, 255);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(129, 97);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "\r\nCampanhas";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.Location = new System.Drawing.Point(0, 152);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 97);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "\r\nClientes";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.viFlatPictureBox1.Location = new System.Drawing.Point(47, 2);
+            this.viFlatPictureBox1.Name = "viFlatPictureBox1";
+            this.viFlatPictureBox1.Size = new System.Drawing.Size(40, 35);
+            this.viFlatPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.viFlatPictureBox1.TabIndex = 9;
+            this.viFlatPictureBox1.TabStop = false;
             // 
             // labelSerial
             // 
             this.labelSerial.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.labelSerial.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSerial.ForeColor = System.Drawing.Color.Silver;
-            this.labelSerial.Location = new System.Drawing.Point(0, 517);
+            this.labelSerial.Location = new System.Drawing.Point(0, 643);
             this.labelSerial.Name = "labelSerial";
             this.labelSerial.Size = new System.Drawing.Size(129, 21);
             this.labelSerial.TabIndex = 8;
@@ -270,22 +287,13 @@
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(0, 64);
+            this.button1.Location = new System.Drawing.Point(0, 63);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 89);
+            this.button1.Size = new System.Drawing.Size(129, 90);
             this.button1.TabIndex = 2;
             this.button1.Text = "\r\nDashboard";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panelUserControl
-            // 
-            this.panelUserControl.AutoScroll = true;
-            this.panelUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelUserControl.Location = new System.Drawing.Point(129, 58);
-            this.panelUserControl.Name = "panelUserControl";
-            this.panelUserControl.Size = new System.Drawing.Size(651, 480);
-            this.panelUserControl.TabIndex = 8;
             // 
             // vissokaCard6
             // 
@@ -551,21 +559,21 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Clientes Cadastrados";
             // 
-            // viFlatPictureBox1
+            // panelUserControl
             // 
-            this.viFlatPictureBox1.Location = new System.Drawing.Point(47, 2);
-            this.viFlatPictureBox1.Name = "viFlatPictureBox1";
-            this.viFlatPictureBox1.Size = new System.Drawing.Size(40, 35);
-            this.viFlatPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.viFlatPictureBox1.TabIndex = 9;
-            this.viFlatPictureBox1.TabStop = false;
+            this.panelUserControl.AutoScroll = true;
+            this.panelUserControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelUserControl.Location = new System.Drawing.Point(129, 58);
+            this.panelUserControl.Name = "panelUserControl";
+            this.panelUserControl.Size = new System.Drawing.Size(893, 606);
+            this.panelUserControl.TabIndex = 8;
             // 
-            // frmMain
+            // frmMainX
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(243)))));
-            this.ClientSize = new System.Drawing.Size(780, 538);
+            this.ClientSize = new System.Drawing.Size(1022, 664);
             this.Controls.Add(this.panelUserControl);
             this.Controls.Add(this.vissokaCard6);
             this.Controls.Add(this.vissokaCard5);
@@ -576,19 +584,18 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmMain";
+            this.Name = "frmMainX";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Umoja Marketing";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmMain_FormClosing);
             this.Load += new System.EventHandler(this.fmMain_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.viFlatPictureBox1)).EndInit();
             this.vissokaCard6.ResumeLayout(false);
             this.vissokaCard6.PerformLayout();
             this.vissokaCard5.ResumeLayout(false);
@@ -601,49 +608,7 @@
             this.vissokaCard2.PerformLayout();
             this.vissokaCard1.ResumeLayout(false);
             this.vissokaCard1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.viFlatPictureBox1)).EndInit();
             this.ResumeLayout(false);
 
-        }
-
-        #endregion
-
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label labelWelcome;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel3;
-        private Vissoka.Controls.ViFlatButton viFlatButton2;
-        private Vissoka.Controls.ViFlatButton viFlatButton1;
-        private System.Windows.Forms.Label labelSerial;
-        private Vissoka.Controls.VissokaCard vissokaCard1;
-        private Vissoka.Controls.VissokaCard vissokaCard2;
-        private Vissoka.Controls.VissokaCard vissokaCard3;
-        private Vissoka.Controls.VissokaCard vissokaCard4;
-        private Vissoka.Controls.VissokaCard vissokaCard5;
-        private Vissoka.Controls.VissokaCard vissokaCard6;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label labelTotal;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label12;
-        private Vissoka.UI.ViFlatPictureBox viFlatPictureBox1;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Panel panelUserControl;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-    }
+	}
 }

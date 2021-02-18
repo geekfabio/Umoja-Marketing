@@ -17,11 +17,13 @@ namespace Vissoka_Marketing.Controllers
             }
             catch
             {
+                Logger.AddToLog("GetCustomersAsync Controller", "Mysql, error on Add Model to Repository");
+                Logger.WriteLog();
                 return null;
             }
             return CustomerModel;
         }
-        public async Task<int> SetCustomerModels(CustomerModel model)
+        public async Task<int> AddCustomer(CustomerModel model)
         {
             if (string.IsNullOrWhiteSpace(model.Name)) return 0;
             try
@@ -32,6 +34,8 @@ namespace Vissoka_Marketing.Controllers
             }
             catch
             {
+                Logger.AddToLog("Add Costumer Controller", "Mysql, error on Add Model to Repository");
+                Logger.WriteLog();
                 return 0;
             }
            

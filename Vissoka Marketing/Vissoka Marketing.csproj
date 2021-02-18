@@ -118,11 +118,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\UserRepository.cs" />
-    <Compile Include="Views\frmClientes.cs">
+    <Compile Include="Views\frmClientes - Copy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\frmClientes.Designer.cs">
-      <DependentUpon>frmClientes.cs</DependentUpon>
+    <Compile Include="Views\frmClientes - Copy.Designer.cs">
+      <DependentUpon>frmClientes - Copy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmCategoria.Designer.cs">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmCustomer.cs">
       <SubType>Form</SubType>
@@ -130,11 +136,14 @@
     <Compile Include="Views\frmCustomer.designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\UserControl1.cs">
+    <Compile Include="Views\ControlCliente.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Views\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="Views\ControlCliente.Designer.cs">
+      <DependentUpon>ControlCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vissoka_Marketing.frmMain.cs">
+      <SubType>Form</SubType>
     </Compile>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -147,14 +156,20 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\frmClientes.resx">
-      <DependentUpon>frmClientes.cs</DependentUpon>
+    <EmbeddedResource Include="Views\frmClientes - Copy.resx">
+      <DependentUpon>frmClientes - Copy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmCategoria.resx">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <EmbeddedResource Include="Views\ControlCliente.resx">
+      <DependentUpon>ControlCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vissoka_Marketing.frmMain.resx">
+      <DependentUpon>Vissoka_Marketing.frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -203,17 +218,11 @@
     <Content Include="favicon.ico" />
     <None Include="Resources\24btn_export.png" />
     <None Include="Resources\btn24x24.png" />
-    <None Include="Resources - Cópia\24btn_export.png" />
-    <None Include="Resources - Cópia\btn24x24.png" />
-    <None Include="Resources - Cópia\Email campaign.gif" />
-    <None Include="Resources - Cópia\Entypo_2302%2812%29_24.png" />
-    <None Include="Resources - Cópia\Entypo_2302%2812%29_48.png" />
-    <None Include="Resources - Cópia\menu_campanhas.png" />
-    <None Include="Resources - Cópia\menu_Clientes.png" />
-    <None Include="Resources - Cópia\menu_config.png" />
-    <None Include="Resources - Cópia\menu_templates.png" />
-    <None Include="Resources - Cópia\Mobile Marketing%281%29.gif" />
-    <None Include="Resources - Cópia\Mobile Marketing.gif" />
+    <None Include="Resources\logo_umoja.png" />
+    <None Include="Resources\android-chrome-192x192.png" />
+    <None Include="Resources\favicon-32x32.png" />
+    <None Include="Resources\favicon-16x16.png" />
+    <None Include="Resources\apple-touch-icon.png" />
     <Content Include="TO DO LIST.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>TO DO LIST.txt</LastGenOutput>

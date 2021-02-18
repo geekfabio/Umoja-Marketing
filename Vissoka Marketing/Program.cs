@@ -14,7 +14,7 @@ namespace Vissoka_Marketing
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Views.frmClientes());
+            Application.Run(new Views.frmCategoria());
         }
     }
 }

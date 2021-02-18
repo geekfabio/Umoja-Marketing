@@ -12,6 +12,20 @@ namespace Vissoka_Marketing
 {
     public partial class frmMain : Form
     {
+
+        Color _selected = Color.FromArgb(64, 64, 64);
+        Color _normal = Color.FromArgb(49, 50, 54);
+        void GiveColor(Button button, string Title = "")
+        {
+            button1.BackColor = _normal;
+            button2.BackColor = _normal;
+            button3.BackColor = _normal;
+            button4.BackColor = _normal;
+            button5.BackColor = _normal;           
+            button.BackColor = _selected;
+            this.Text = "Umoja Marketing || " + Title;
+            panelUserControl.Controls.Clear();
+        }
         public frmMain()
         {
             InitializeComponent();
@@ -24,13 +38,13 @@ namespace Vissoka_Marketing
 
         private void fmMain_Load(object sender, EventArgs e)
         {
-            labelWelcome.Text = " Olá, {0} seja bem vindo" + Properties.Settings.Default.userName;
+            labelWelcome.Text = string.Format(" Olá, {0} seja bem vindo", Properties.Settings.Default.userName);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
            
-            Views.UserControl1 controlCliente = new Views.UserControl1();
+            Views.ControlCliente controlCliente = new Views.ControlCliente();
             panelUserControl.Controls.Add(controlCliente);
             panelUserControl.Visible = true;
         }
@@ -38,6 +52,31 @@ namespace Vissoka_Marketing
         private void button1_Click(object sender, EventArgs e)
         {
             panelUserControl.Visible = false;
+            GiveColor(button1);
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            
+            Cursor.Current = Cursors.WaitCursor;
+            GiveColor(button2, "Clientes");
+            Views.ControlCliente controlCliente = new Views.ControlCliente();
+
+            panelUserControl.Controls.Add(controlCliente);
+            panelUserControl.Visible = true;
+            Cursor.Current = Cursors.Default;
+        
+        }
+
+        private void frmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            //Cath all Excpection 
+            Logger.WriteLog();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            new Views.frmCategoria().Show();
         }
     }
 }

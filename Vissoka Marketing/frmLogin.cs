@@ -61,7 +61,7 @@ namespace Vissoka_Marketing
                 Loading loading = Loading.ShowLoading(this);
                 await Task.Run(() => Controller.LoginUser(txtUsername.Text, txtPassword.Text, checkKeepSession.Checked));
                 Loading.StopLoading(loading);
-                btn.Enabled = true;
+                btn.Enabled = true;                
                 if (string.IsNullOrEmpty(Properties.Settings.Default.userName))
                 {
                     MessageBox.Show("Usúario ou Senha Incorrectos", "Vissoka", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);                
@@ -70,6 +70,7 @@ namespace Vissoka_Marketing
                 {
                     MessageBox.Show("Usúario ou Senha Incorrectos", "Vissoka", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
+              
             }          
         }
 
